@@ -30,5 +30,10 @@ public class InfoServlet extends HttpServlet {
 		out.print("</body></html>");
 		out.close();
 	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		doGet(request, response);
+	}
 
 }
