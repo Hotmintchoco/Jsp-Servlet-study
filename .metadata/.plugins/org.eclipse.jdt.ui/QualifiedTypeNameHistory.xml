@@ -19,4 +19,6 @@
     <fullyQualifiedTypeName name="Student"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="MyTv"/>
+    <fullyQualifiedTypeName name="SutdaCard"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
 </qualifiedTypeNameHistroy>
