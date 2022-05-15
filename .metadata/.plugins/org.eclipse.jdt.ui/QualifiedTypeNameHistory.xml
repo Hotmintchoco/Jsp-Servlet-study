@@ -19,7 +19,10 @@
     <fullyQualifiedTypeName name="MyTv"/>
     <fullyQualifiedTypeName name="SutdaCard"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="test.practice.TestExample1"/>
+    <fullyQualifiedTypeName name="test3.practice.Test"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
