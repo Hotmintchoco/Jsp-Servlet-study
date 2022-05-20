@@ -20,7 +20,6 @@
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="test.practice.TestExample1"/>
     <fullyQualifiedTypeName name="test3.practice.Test"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="Person2"/>
     <fullyQualifiedTypeName name="PersonComp"/>
     <fullyQualifiedTypeName name="day7.controller.Function"/>
@@ -31,4 +30,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.loop.Test"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="day10.silsub.model.Sample"/>
 </qualifiedTypeNameHistroy>
