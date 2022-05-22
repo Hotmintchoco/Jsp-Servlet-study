@@ -1,12 +1,13 @@
 package day10.silsub.model;
 
-import java.util.Iterator;
+import java.util.Scanner;
 
 public class Sample {
 
 	public static void main(String[] args) {
 		Sample sample = new Sample();
-		sample.munjae1();
+//		sample.munjae1();
+		sample.munjae2();
 	}
 	
 	public void munjae1() {
@@ -33,4 +34,24 @@ public class Sample {
 				arr[3][2], arr[3][3]);
 	}
 
+	public void munjae2() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("생성하고자 하는 열의 개수를 입력하세요.");
+		
+		int rows = sc.nextInt();
+		
+		int[][] arr = new int[3][rows];
+		int[] sum = new int[3];
+		
+		System.out.println(rows * 3 + "개의 정수를 입력하세요.");
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j] = sc.nextInt();
+				sum[i] += arr[i][j];
+			}
+			if (sum[i] % 5 == 0) {
+				System.out.printf("%d행의 합계가 5의 배수입니다.%n", i);
+			}
+		}
+	}
 }
