@@ -49,8 +49,18 @@ public class Sample {
 				arr[i][j] = sc.nextInt();
 				sum[i] += arr[i][j];
 			}
+		}
+		for (int i = 0; i < arr.length; i++) {
 			if (sum[i] % 5 == 0) {
-				System.out.printf("%d행의 합계가 5의 배수입니다.%n", i);
+				for (int j = 0; j < arr[i].length; j++) {
+					System.out.printf("arr[%d][%d]\t", i, j);
+				}
+				System.out.println();
+				for (int j = 0; j < arr[i].length; j++) {
+					System.out.printf("  = %d\t", arr[i][j]);
+					System.out.print("\t");
+				}
+				System.out.println();
 			}
 		}
 	}
