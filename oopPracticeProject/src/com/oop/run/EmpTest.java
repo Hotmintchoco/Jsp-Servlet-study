@@ -34,6 +34,7 @@ public class EmpTest {
 				break;
 			case 3:
 				list.removeAll(list);
+				System.out.println("삭제가 완료되었습니다.");
 				break;
 			case 4:
 				System.out.println(list.get(0).empOutput());
