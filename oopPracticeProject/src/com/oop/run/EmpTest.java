@@ -33,7 +33,7 @@ public class EmpTest {
 				modifyMenu(list.get(0));
 				break;
 			case 3:
-				employee.empInput();
+				list.removeAll(list);
 				break;
 			case 4:
 				System.out.println(list.get(0).empOutput());
