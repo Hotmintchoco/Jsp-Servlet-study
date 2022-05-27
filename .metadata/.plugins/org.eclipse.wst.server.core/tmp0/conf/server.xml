@@ -102,9 +102,9 @@
 					Note: The pattern used is equivalent to using pattern="common" -->
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-				<Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\web-study-01" path="/web-study-01" reloadable="true" source="org.eclipse.jst.jee.server:web-study-01"/>
-				<Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\web-study-02" path="/web-study-02" reloadable="true" source="org.eclipse.jst.jee.server:web-study-02"/>
-			<Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\web-study-exercise" path="/web-study-exercise" reloadable="true" source="org.eclipse.jst.jee.server:web-study-exercise"/></Host>
+				
+				
+			<Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\self-study-03" path="/jsp-self-study" reloadable="true" source="org.eclipse.jst.jee.server:self-study-03"/></Host>
 		</Engine>
 	</Service>
 </Server>
