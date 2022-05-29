@@ -7,8 +7,8 @@ public class ArraySample {
 
 	public static void main(String[] args) {
 		ArraySample sample = new ArraySample();
-		sample.test1();
-		sample.test2();
+		sample.test3();
+		
 	}
 	public void test1() {
 		int[] arr = new int[10];
@@ -43,4 +43,22 @@ public class ArraySample {
 		
 		System.out.println(arr[0] + " " + arr[9]);
  	}
+	
+	public void test3() {
+		byte[] arr = new byte[10];
+		Random rand = new Random();
+		int sum = 0;
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = (byte)rand.nextInt(256);
+		}
+		
+		for (int i : arr) {
+			if (i % 2 == 0) {
+				sum += i;
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+		System.out.println(sum);
+	}
 }
