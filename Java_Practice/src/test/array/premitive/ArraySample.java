@@ -8,7 +8,7 @@ public class ArraySample {
 
 	public static void main(String[] args) {
 		ArraySample sample = new ArraySample();
-		sample.test4();
+		sample.test5();
 		
 	}
 	public void test1() {
@@ -73,6 +73,21 @@ public class ArraySample {
 		for (int i = 0; i < intArr.length(); i++) {
 			String str = intArr.substring(i, i+1);
 			sum += Integer.parseInt(str);
+		}
+		
+		System.out.println("합계 : " + sum);
+	}
+	
+	public void test5(){
+		Scanner sc = new Scanner(System.in);
+		int sum = 0;
+		System.out.println("숫자 문자열을 입력하세요 : ");
+		
+		String intArr = sc.nextLine();
+		
+		for (int i = 0; i < intArr.length(); i++) {
+			char ch = intArr.charAt(i);
+			sum += (int)(ch - 48);
 		}
 		
 		System.out.println("합계 : " + sum);
