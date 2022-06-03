@@ -104,7 +104,7 @@
 
 				
 				
-			<Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\self-study-03" path="/jsp-self-study" reloadable="true" source="org.eclipse.jst.jee.server:self-study-03"/></Host>
+			<Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\self-study-03" path="/jsp-self-study" reloadable="true" source="org.eclipse.jst.jee.server:self-study-03"/><Context docBase="C:\works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\web-project" path="/web-project" reloadable="true" source="org.eclipse.jst.jee.server:web-project"/></Host>
 		</Engine>
 	</Service>
 </Server>

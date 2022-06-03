@@ -104,7 +104,7 @@
 
 				
 				
-			<Context docBase="self-study-03" path="/jsp-self-study" reloadable="true" source="org.eclipse.jst.jee.server:self-study-03"/></Host>
+			<Context docBase="self-study-03" path="/jsp-self-study" reloadable="true" source="org.eclipse.jst.jee.server:self-study-03"/><Context docBase="web-project" path="/web-project" reloadable="true" source="org.eclipse.jst.jee.server:web-project"/></Host>
 		</Engine>
 	</Service>
 </Server>
