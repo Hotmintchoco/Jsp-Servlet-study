@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
+<h2>업데이트 완료</h2>
 </body>
 </html>

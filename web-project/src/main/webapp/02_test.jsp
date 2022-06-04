@@ -1,5 +1,5 @@
 <%@page import="java.sql.Connection"%>
-<%@page import="com.manage.dao.MemberDAO"%>
+<%@page import="com.magic.dao.EmployeesDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <%
-	MemberDAO dao = MemberDAO.getInstance();
+EmployeesDAO dao = EmployeesDAO.getInstance();
 	Connection conn = dao.getConnection();
 	out.println("DB연결 성공");
 %>

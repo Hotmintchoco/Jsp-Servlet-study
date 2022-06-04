@@ -6,13 +6,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-#form01 {
+#header {
 	background-color: white;
 	height: 80px;
-	margin-left: 25px;
 }
 
-#form01 input {
+input {
 	vertical-align: top;
 	margin: 0px;
 	height: 100%;
@@ -38,12 +37,32 @@
 </style>
 </head>
 <body>
-	<form id="form01" action="#">
+<%
+	if(session.getAttribute("loginUser")==null){
+		request.getParameter("name");
+%>
+<div id="header">
+	<form action="login.do">
 		<input type="button" class="buttons" value="">
 		<input type="button" class="buttons" value="">
-		<input type="button" class="buttons" value="로그인">
+		<input type="submit" class="buttons" value="로그인">
 		<input type="button" class="buttons" value="사원등록&#x00A;(관리자로 로그인 후 사용 가능)">
-		<input type="button" class="buttons" value="마이페이지">
+		<input type="button" class="buttons" value="마이페이지&#x00A;(로그인 후 사용 가능)">
 	</form>
+</div>
+<%
+	} else {
+%>
+<div id="header">
+	<input type="button" class="buttons" value="${loginUser.name}님 반갑습니다.">
+	<input type="button" class="buttons" value="레벨 : ${loginUser.admin}">
+	<input type="submit" class="buttons" value="로그아웃">
+	<input type="button" class="buttons" value="사원등록&#x00A;(관리자로 로그인 후 사용 가능)">
+	<input type="submit" class="buttons" value="마이페이지"
+			onclick="location.href='mypage.do?userid=${loginUser.userid}'">
+</div>
+<%
+	}
+%>
 </body>
 </html>

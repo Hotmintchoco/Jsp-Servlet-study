@@ -1,4 +1,4 @@
-package com.manage.dto;
+package com.magic.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,11 +7,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class MemberVO {
+public class EmployeesVO {
 	private String name;
 	private String userid;
 	private String pwd;
 	private String phone;
 	private int gender;
-	private int admin;
+	private char admin;
 }
