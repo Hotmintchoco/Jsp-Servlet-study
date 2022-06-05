@@ -36,8 +36,24 @@
 		</tr>
 		<tr>
 			<td> 권한  </td>
-			<td> <input type="text" name="admin" size="20"
-			value="${eVo.admin}" readonly> </td>
+			<td>
+			<c:choose>
+				<c:when test="${eVo.admin == 'A'.charAt(0)}">
+					<label> 
+					<select name="admin">
+							<option value="A">운영자</option>
+					</select>
+					</label>
+				</c:when>
+				<c:otherwise>
+					<label> 
+					<select name="admin">
+							<option value="B">일반회원</option>
+					</select>
+					</label>
+				</c:otherwise>
+			</c:choose>
+			</td>
 		</tr>
 		<tr>
 			<td> 성별  </td>
@@ -45,7 +61,7 @@
 			<c:choose>
 				<c:when test="${eVo.gender==0}">
 					<label> 
-					<select name="admin">
+					<select name="gender">
 							<option value="0">여자</option>
 							<option value="1">남자</option>
 					</select>
@@ -53,7 +69,7 @@
 				</c:when>
 				<c:otherwise>
 					<label> 
-					<select name="admin">
+					<select name="gender">
 							<option value="1">남자</option>
 							<option value="0">여자</option>
 					</select>
@@ -75,6 +91,7 @@
 			</td>
 		</tr>
 	</table>
+	<h4 style="text-align: center;">${message}</h4>
 </form>
 </body>
 </html>

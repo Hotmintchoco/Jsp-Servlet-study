@@ -18,8 +18,15 @@ public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = "employee/login.jsp";
+		
+		HttpSession session=request.getSession();
+		
+		if(session.getAttribute("loginUser") != null)
+			url="main.jsp";
 		RequestDispatcher dispatcher = request.
-				getRequestDispatcher("employee/login.jsp");
+				getRequestDispatcher(url);
+		
 		dispatcher.forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -28,13 +35,13 @@ public class LoginServlet extends HttpServlet {
 		String userid = request.getParameter("userid");
 		String pwd = request.getParameter("pwd");
 		
-		EmployeesDAO mDao = EmployeesDAO.getInstance();
-		int result = mDao.userCheck(userid, pwd);
+		EmployeesDAO eDao = EmployeesDAO.getInstance();
+		int result = eDao.userCheck(userid, pwd);
 		
 		if (result == 1) {
-			EmployeesVO mVo = mDao.getMember(userid);
+			EmployeesVO eVo = eDao.getMember(userid);
 			HttpSession session = request.getSession();
-			session.setAttribute("loginUser", mVo);
+			session.setAttribute("loginUser", eVo);
 			url="main.jsp";
 		} else if(result == 0) {
 			request.setAttribute("message", "비밀번호가 맞지 않습니다.");

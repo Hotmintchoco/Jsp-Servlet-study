@@ -47,4 +47,6 @@
     <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.magic.dao.EmployeesDAO"/>
+    <fullyQualifiedTypeName name="com.magic.dto.EmployeesVO"/>
 </qualifiedTypeNameHistroy>

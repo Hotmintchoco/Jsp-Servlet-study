@@ -102,7 +102,7 @@ public class EmployeesDAO {
 
 	public int updateEmployee(EmployeesVO eVo) {
 		int result = -1;
-		String sql = "update member set pwd=?, gender=?,"
+		String sql = "update employees set pwd=?, gender=?,"
 				+ "phone=? where userid=?";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -110,7 +110,7 @@ public class EmployeesDAO {
 			conn = getConnection();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, eVo.getPwd());
-			pstmt.setString(2, (eVo.getGender() + ""));
+			pstmt.setInt(2, eVo.getGender());
 			pstmt.setString(3, eVo.getPhone());
 			pstmt.setString(4, eVo.getUserid());
 			result = pstmt.executeUpdate();
