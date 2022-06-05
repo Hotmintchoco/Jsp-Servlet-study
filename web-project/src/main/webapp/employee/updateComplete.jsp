@@ -20,7 +20,7 @@
 		<tr>
 			<td colspan="2">
 				<h3>사원 정보</h3> <br>
-				${message}
+				<p style="color: #A6A6A6">${message}</p>
 			</td>
 		</tr>
 		<tr>

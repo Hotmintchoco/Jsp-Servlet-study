@@ -54,12 +54,14 @@ input {
 	} else {
 %>
 <div id="header">
-	<input type="button" class="buttons" value="${loginUser.name}님 반갑습니다.">
-	<input type="button" class="buttons" value="레벨 : ${loginUser.admin}">
-	<input type="submit" class="buttons" value="로그아웃">
-	<input type="button" class="buttons" value="사원등록&#x00A;(관리자로 로그인 후 사용 가능)">
-	<input type="submit" class="buttons" value="마이페이지"
-			onclick="location.href='mypage.do?userid=${loginUser.userid}'">
+	<form action="logout.do">
+		<input type="button" class="buttons" value="${loginUser.name}님 반갑습니다.">
+		<input type="button" class="buttons" value="레벨 : ${loginUser.admin}">
+		<input type="submit" class="buttons" value="로그아웃">
+		<input type="button" class="buttons" value="사원등록&#x00A;(관리자로 로그인 후 사용 가능)">
+		<input type="button" class="buttons" value="마이페이지"
+				onclick="location.href='mypage.do?userid=${loginUser.userid}'">
+	</form>
 </div>
 <%
 	}

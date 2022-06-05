@@ -14,7 +14,7 @@ import com.magic.dao.EmployeesDAO;
 import com.magic.dto.EmployeesVO;
 
 @WebServlet("/mypage.do")
-public class mypageUpdate extends HttpServlet {
+public class mypageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
