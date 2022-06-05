@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,16 +54,33 @@ input {
 <%
 	} else {
 %>
-<div id="header">
-	<form action="logout.do">
-		<input type="button" class="buttons" value="${loginUser.name}님 반갑습니다.">
-		<input type="button" class="buttons" value="레벨 : ${loginUser.admin}">
-		<input type="submit" class="buttons" value="로그아웃">
-		<input type="button" class="buttons" value="사원등록&#x00A;(관리자로 로그인 후 사용 가능)">
-		<input type="button" class="buttons" value="마이페이지"
-				onclick="location.href='mypage.do?userid=${loginUser.userid}'">
-	</form>
-</div>
+<c:choose>
+	<c:when test="${loginUser.admin == 'A'.charAt(0)}">
+	<div id="header">
+		<form action="logout.do">
+			<input type="button" class="buttons" value="${loginUser.name}님 반갑습니다.">
+			<input type="button" class="buttons" value="레벨 : ${loginUser.admin}">
+			<input type="submit" class="buttons" value="로그아웃">
+			<input type="button" class="buttons" value="사원등록"
+					onclick="location.href='registration.do?userid=${loginUser.userid}'">
+			<input type="button" class="buttons" value="마이페이지"
+					onclick="location.href='mypage.do?userid=${loginUser.userid}'">
+		</form>
+	</div>
+	</c:when>
+	<c:otherwise>
+	<div id="header">
+		<form action="logout.do">
+			<input type="button" class="buttons" value="${loginUser.name}님 반갑습니다.">
+			<input type="button" class="buttons" value="레벨 : ${loginUser.admin}">
+			<input type="submit" class="buttons" value="로그아웃">
+			<input type="button" class="buttons" value="사원등록&#x00A;(관리자로 로그인 후 사용 가능)">
+			<input type="button" class="buttons" value="마이페이지"
+					onclick="location.href='mypage.do?userid=${loginUser.userid}'">
+		</form>
+	</div>
+	</c:otherwise>
+</c:choose>
 <%
 	}
 %>

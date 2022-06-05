@@ -126,4 +126,32 @@ public class EmployeesDAO {
 		}
 		return result;
 	}
+
+	public int insertEmployee(EmployeesVO eVo) {
+		int result = -1;
+		String sql = "insert into employees values(?, ?, ?, ?, ?, ?)";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, eVo.getName());
+			pstmt.setString(2, eVo.getUserid());
+			pstmt.setString(3, eVo.getPwd());
+			pstmt.setString(4, eVo.getPhone());
+			pstmt.setInt(5, eVo.getGender());
+			pstmt.setString(6, (eVo.getAdmin()+""));
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (pstmt != null) pstmt.close();
+				if (conn != null) conn.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
 }
