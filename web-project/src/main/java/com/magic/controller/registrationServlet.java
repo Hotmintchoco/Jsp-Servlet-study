@@ -8,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.magic.dao.EmployeesDAO;
 import com.magic.dto.EmployeesVO;
@@ -43,13 +42,12 @@ public class registrationServlet extends HttpServlet {
 		EmployeesDAO eDao=EmployeesDAO.getInstance();
 		int result=eDao.insertEmployee(eVo);
 		
-		HttpSession session = request.getSession();
-		
 		if (result == 1) {
-			session.setAttribute("userid", eVo.getUserid());
-			request.setAttribute("message", "회원 가입에 성공했습니다.");
+			request.setAttribute("user", eVo);
+			request.setAttribute("message", "회원 등록에 성공했습니다.");
+			url = "employee/joinEmployee.jsp";
 		} else if (result == -1) {
-			request.setAttribute("message", "회원 가입에 실패했습니다.");
+			request.setAttribute("message", "회원 등록에 실패했습니다.");
 		}
 		
 		RequestDispatcher dispatcher = request
