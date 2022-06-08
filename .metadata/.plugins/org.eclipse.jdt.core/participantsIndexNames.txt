@@ -7,6 +7,8 @@ C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3774709850.index
 \web-study-09\src\main\java
 C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2214495818.index
 \web-study-09\src\main\java
+C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3909451767.index
+\BoardJspProject\src\main\java
 C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2554670461.index
 \web-study-09\src\main\java
 C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2602799423.index
