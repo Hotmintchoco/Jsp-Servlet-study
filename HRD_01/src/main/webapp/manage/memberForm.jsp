@@ -28,6 +28,7 @@
 	section > h1 {text-align: center; line-height: 100px;}
 	section {width: 1000px; height: 500px; background-color: #D5D5D5; margin:0 auto;}
 	table, th, td  { border:1px solid #666; text-align: center;}
+	a {text-decoration: none; color: white;}
 	.input-group {width: 1000px;}
 </style>
 </head>
