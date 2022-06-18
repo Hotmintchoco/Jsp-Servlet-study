@@ -12,8 +12,9 @@
 	} else {
 		list = dao.memberList();
 	}
-	pageContext.setAttribute("memberlist", list);
+	//pageContext.setAttribute("memberlist", list);
 %>
+<c:set var="memberlist" value="<%=list%>"></c:set>
 <!DOCTYPE html>
 <html>
 <head>
