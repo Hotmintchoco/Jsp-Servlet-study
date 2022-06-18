@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*, DBPKG.*"%>
 <jsp:useBean id="dao" class="DBPKG.manageDAO"/>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String search = request.getParameter("search");
 	List<manageVO> list = null;
@@ -11,7 +12,7 @@
 	} else {
 		list = dao.memberList();
 	}
-
+	pageContext.setAttribute("memberlist", list);
 %>
 <!DOCTYPE html>
 <html>
@@ -56,7 +57,20 @@
 					<th width=10%>고객등급</th>
 					<th width=10%>거주지역</th>
 				</tr>
-				<%
+				<c:forEach var="member" items="${memberlist}">
+				<tr>
+					<td width=10%>${member.no}</td>
+					<td width=10%>${member.name}</td>
+					<td width=15%>${member.phone}</td>
+					<td width=30%>${member.address}</td>
+					<td width=15%>${member.joindate}</td>
+					<td width=10%>${member.grade}</td>
+					<td width=10%>${member.city}</td>
+				</tr>
+				</c:forEach>
+				
+				
+				<%-- <%
 					String grade = "직원";
 					for(manageVO vo : list) {
 				%>
@@ -78,7 +92,7 @@
 				</tr>
 				<%
 					}
-				%>
+				%> --%>
 			</table>
 		</section>
 <jsp:include page="footer.jsp"/>
