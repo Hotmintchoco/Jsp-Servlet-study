@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
 <jsp:useBean id="dao" class="DBPKG.manageDAO"/>
 <%
 	request.setCharacterEncoding("utf-8");
+	String today = new SimpleDateFormat("yyyyMMdd").format(new Date());
 %>
 
 <jsp:useBean id="vo" class="DBPKG.manageVO">
@@ -54,7 +57,7 @@
 			</tr>
 			<tr>
 				<th>가입일자</th>
-				<td><input type="text" name="joindate"></td>
+				<td><input type="text" name="joindate" value=<%=today%> readonly></td>
 			</tr>
 			<tr>
 				<th>고객등급[A:VIP,B:일반,C:직원]</th>

@@ -60,11 +60,11 @@
 				</tr>
 				<c:forEach var="member" items="${memberlist}">
 				<tr>
-					<td width=10%>${member.no}</td>
+					<td width=10%><a href="updateForm.jsp?no=${member.no}">${member.no}</a></td>
 					<td width=10%>${member.name}</td>
 					<td width=15%>${member.phone}</td>
 					<td width=30%>${member.address}</td>
-					<td width=15%>${member.joindate}</td>
+					<td width=15%>${member.joindate.substring(0, 10)}</td>
 					<td width=10%>${member.grade}</td>
 					<td width=10%>${member.city}</td>
 				</tr>
