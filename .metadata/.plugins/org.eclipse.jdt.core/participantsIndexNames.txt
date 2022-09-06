@@ -31,3 +31,5 @@ C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3361656204.index
 \web-project\src\main\java
 C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\713562160.index
 \HRD_01\src\main\java
+C:\works\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4025919013.index
+\HRD_course\src\main\java
