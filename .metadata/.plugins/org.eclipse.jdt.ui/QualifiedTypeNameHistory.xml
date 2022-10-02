@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="Student"/>
-    <fullyQualifiedTypeName name="MyTv"/>
-    <fullyQualifiedTypeName name="SutdaCard"/>
-    <fullyQualifiedTypeName name="test.practice.TestExample1"/>
-    <fullyQualifiedTypeName name="test3.practice.Test"/>
     <fullyQualifiedTypeName name="Person2"/>
     <fullyQualifiedTypeName name="PersonComp"/>
     <fullyQualifiedTypeName name="day7.controller.Function"/>
@@ -49,15 +43,21 @@
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.saeyan.dao.ProductDAO"/>
     <fullyQualifiedTypeName name="util.DBManager"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="DBPKG.ClassVO"/>
     <fullyQualifiedTypeName name="DBPKG.TeacherVO"/>
     <fullyQualifiedTypeName name="DBPKG.DetailClassVO"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="DBPKG.Course"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="DBPKG.Course"/>
+    <fullyQualifiedTypeName name="DBPKG.VoteVO"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
